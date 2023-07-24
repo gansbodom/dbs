@@ -1,17 +1,17 @@
 create table if not exists "Artist"(
-    "artist_id" serial primary key,
+    "id" serial primary key,
     "artist_name" varchar(80) not null
 );
 
 create table if not exists "Genre"(
-    "genre_id" serial primary key,
+    "id" serial primary key,
     "genre_name" varchar(80) not null
 );
 
 create table if not exists "Artist_genre"(
-    "artist_id" integer not null references Artist(artist_id),
-    "genre_id" integer not null references Genre(genre_id)
-constraint pk primary key(artist_id, genre_id),
+    "artist_id" integer not null references "Artist" ("id"),
+    "genre_id" integer not null references "Genre" ("id")
+constraint pk primary key ("artist_id", "genre_id"),
 );
 
 create table if not exists "Albums"(
@@ -23,7 +23,7 @@ year integer not null
 create table if not exists "Album_artist"(
     "artist_id" integer not null references "Artist" ("id"),
     "album_id" integer not null references "Albums" ("album_id"),
-constraint pk primary key("artist_id", "album_id")
+constraint pa primary key("artist_id", "album_id")
 );
 
 create table if not exists "Tracks"(
@@ -36,12 +36,12 @@ create table if not exists "Tracks"(
 create table if not exists "Compilations"(
     "compilation_id" serial primary key,
     "name" varchar(80) not null,
-year integer not null
+    "year" integer not null
 );
 
 create table  if not exists "Track_compilation"(
     "track_id" integer not null references "Tracks" ("track_id"),
     "compilation_id" integer not null references "Compilations" ("compilation_id"),
-constraint pk primary key ("track_id", "compilation_id")
+constraint pc primary key ("track_id", "compilation_id")
 );
 
