@@ -17,7 +17,8 @@ INSERT INTO public."Albums" (album_name,"year") VALUES
 	 ('Проклятье морей',2018),
 	 ('Каменный лес',2001),
 	 ('Лунапарк',2009),
-	 ('Kill ’Em All',1986);
+	 ('Kill ’Em All',1986),
+	 ('Мяу кисс ми', 2004);
 
 INSERT INTO public."Album_artist" (artist_id,album_id) VALUES
 	 (29,1),
@@ -51,7 +52,8 @@ INSERT INTO public."Tracks" (track_name,album_id,duration) VALUES
 	 ('Казаки',6,'00:03:54'),
 	 ('Банзай',7,'00:04:02'),
 	 ('Третий Рим',7,'00:03:18'),
-	 ('Hit the Lights',8,'00:04:17');
+	 ('Hit the Lights',8,'00:04:17'),
+	 ('Мой рок-н-ролл',17,'00:06:45');
 	
 INSERT INTO public."Artist_genre" (artist_id,genre_id) VALUES
 	 (29,1),
