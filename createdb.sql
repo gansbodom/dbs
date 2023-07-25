@@ -9,9 +9,9 @@ create table if not exists "Genre"(
 );
 
 create table if not exists "Artist_genre"(
-    "artist_id" integer not null references "Artist" ("id"),
-    "genre_id" integer not null references "Genre" ("id")
-constraint pk primary key ("artist_id", "genre_id"),
+"artist_id" integer not null references "Artist" ("id"),
+"genre_id" integer not null references "Genre" ("id"),
+constraint pk primary key ("artist_id", "genre_id")
 );
 
 create table if not exists "Albums"(
@@ -44,4 +44,5 @@ create table  if not exists "Track_compilation"(
     "compilation_id" integer not null references "Compilations" ("compilation_id"),
 constraint pc primary key ("track_id", "compilation_id")
 );
+
 
