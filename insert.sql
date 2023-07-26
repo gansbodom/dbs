@@ -15,14 +15,14 @@ INSERT INTO public."Genre" (genre_name) VALUES
 	 ('Хэви метал'),
 	 ('Альтернативный рок');
 INSERT INTO public."Artist_genre" (artist_id,genre_id) VALUES
-	 (29,1),
-	 (30,5),
-	 (31,5),
-	 (32,4),
-	 (33,2),
-	 (34,5),
-	 (35,4),
-	 (36,2);
+	 (1,1),
+	 (2,5),
+	 (3,5),
+	 (4,4),
+	 (5,2),
+	 (6,5),
+	 (7,4),
+	 (8,2);
 INSERT INTO public."Albums" (album_name,"year") VALUES
 	 ('Вечно прячется судьба',2003),
 	 ('Шаг Вдох',2006),
@@ -34,14 +34,14 @@ INSERT INTO public."Albums" (album_name,"year") VALUES
 	 ('Kill ’Em All',1986),
 	 ('Мяу кисс ми',2004);
 INSERT INTO public."Album_artist" (artist_id,album_id) VALUES
-	 (29,1),
-	 (30,2),
-	 (31,3),
-	 (32,4),
-	 (33,5),
-	 (34,6),
-	 (35,7),
-	 (36,8);
+	 (1,1),
+	 (2,2),
+	 (3,3),
+	 (4,4),
+	 (5,5),
+	 (6,6),
+	 (7,7),
+	 (8,8);
 INSERT INTO public."Tracks" (track_name,album_id,duration) VALUES
 	 ('Восковой дождь',1,'00:02:21'),
 	 ('Осколки',1,'00:04:04'),
@@ -78,3 +78,4 @@ INSERT INTO public."Track_compilation" (track_id,compilation_id) VALUES
 	 (12,7),
 	 (13,8),
 	 (14,8);
+
