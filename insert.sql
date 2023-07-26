@@ -17,6 +17,7 @@ INSERT INTO public."Genre" (genre_name) VALUES
 INSERT INTO public."Artist_genre" (artist_id,genre_id) VALUES
 	 (1,1),
 	 (2,5),
+	 (2,3),
 	 (3,5),
 	 (4,4),
 	 (5,2),
