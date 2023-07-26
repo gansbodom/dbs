@@ -53,7 +53,7 @@ INSERT INTO public."Tracks" (track_name,album_id,duration) VALUES
 	 ('Банзай',7,'00:04:02'),
 	 ('Третий Рим',7,'00:03:18'),
 	 ('Hit the Lights',8,'00:04:17'),
-	 ('Мой рок-н-ролл',17,'00:06:45');
+	 ('Мой рок-н-ролл',9,'00:06:45');
 	
 INSERT INTO public."Artist_genre" (artist_id,genre_id) VALUES
 	 (29,1),
